@@ -1,5 +1,7 @@
 html,body {
-	margin: 0 auto;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
 }
 #menu {
 	margin: 0 auto;
@@ -135,6 +137,9 @@ nav ul li{
 	text-align:center;
 	background-color: #18BC9C; 
 }
+.download-wrapper{
+	padding: 50px 0px;
+}
 #two-p {
 	font-size: 40px;
 	color:#fff;
@@ -214,18 +219,24 @@ input{
 	margin-left: 10px;
 }
 #address{
+	width: 100%;
 	height: 250px;
 	margin: 0 auto;
 	background-color: #2C3E50;
 	color: #fff;
 }
+#address > div {
+	width: 33.33%;
+	box-sizing: border-box;
+	text-align: center;
+}
 #location{
 	float: left;
-	margin:30px 15px 50px 60px;
+	padding:30px 15px 50px 60px;
 }
 #around{
 	float: left;
-	margin:30px 30px 50px 30px;
+	padding:30px 30px 50px 30px;
 }
 .tool{
 	display: inline-block;
@@ -239,9 +250,12 @@ input{
 #about{
 	float: left;
 	font-size: 20px;
-	margin:30px 20px 50px 15px;
+	padding:30px 20px 50px 15px;
 }
-p>a{
+#about > p {
+	text-align: center;
+}
+#about > p > a{
 	color: #18AC78;
 }
 #footer{
